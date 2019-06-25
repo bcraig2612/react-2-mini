@@ -22,8 +22,8 @@ export default class TextContainer extends Component {
           style={ { color: this.props.fontColor, fontFamily: this.props.fontFamily, fontSize: this.props.fontSize } }
           onChange={this.updateText}
           value={this.state.text}
-          placeholder="Start typing your thoughts here!"
-          cols="90"
+          placeholder="3...2...1...START TYPING!"
+          cols="50"
           rows="30">
         </textarea>
       </div>

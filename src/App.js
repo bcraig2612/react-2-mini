@@ -8,45 +8,51 @@ import FamilyChanger from './components/FamilyChanger';
 import TextContainer from './components/TextContainer';
 
 class App extends Component {
+
+  // constructor
   constructor() {
     super()
     this.state = {
       fontColor: 'black',
-      fontSize: 12,
+      fontSize: 20,
       fontFamily: 'monospace',
       allowEdit: 'true'
-    }; 
-  // constructor
+    };
+
+    // bind methods
   this.updateColor = this.updateColor.bind( this );
   this.updateSize = this.updateSize.bind( this );
   this.updateFamily = this.updateFamily.bind( this );
   this.updateEditStatus = this.updateEditStatus.bind( this );
   }
-  // bind methods
+
+  // updateColor
 updateColor(val) {
   this.setState({
     fontColor: val
   });
 }
-  // updateColor
+
+// updateSize
 updateSize(val) {
   this.setState({
     fontSize: val
   });
 }
-// updateSize
+
+// updateFamily
 updateFamily(val) {
   this.setState({
     fontFamily: val
   });
 }
-  // updateFamily
+
+// updateEditStatus
   updateEditStatus(val) {
     this.setState({
       allowEdit: val
     });
   }
-  // updateEditStatus
 
   render() {
     return (

@@ -9,6 +9,7 @@ export default class FamilyChanger extends Component {
       <option value="monospace"> Monospace </option>
       <option value="arial"> Arial </option>
       <option value="courier"> Courier </option>
+      <option value="wingdings"> Wingdings </option>
     </select>
     );
   }
